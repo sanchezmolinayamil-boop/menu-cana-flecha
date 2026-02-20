@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Caña Flecha</title>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9e2d8;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0 10px 0;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+/* Marca de agua */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.12;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.seccion {
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.plato {
+  margin-bottom: 30px;
+}
+
+.plato-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.descripcion {
+  line-height: 1.6;
+}
+/* Barra de navegación */
+/* Navegación centrada tipo cápsula */
+
+.menu-nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;   /* CENTRADO */
+  flex-wrap: wrap;           /* Que bajen si no caben */
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 30px;       /* Forma cápsula */
+  background: #f2ece4;
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.menu-nav a:hover {
+  background: #a67c52;
+  color: white;
+  transform: translateY(-2px);
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="header">
+  <img src="logo.png" alt="Caña Flecha" class="logo">
+</header>
+<nav class="menu-nav">
+  <a href="#entradas">Entradas</a>
+  <a href="#cremas">Cremas</a>
+  <a href="#arroces">Arroces</a>
+  <a href="#salmon">Salmón</a>
+  <a href="#pastas">Pastas</a>
+  <a href="#pescados">Pescados</a>
+  <a href="#res">Res</a>
+  <a href="#ensaladas">Ensaladas</a>
+  <a href="#rapiditos">Rapiditos</a>
+  <a href="#postres">Postres</a>
+  <a href="#infantil">Menú Infantil</a>
+</nav>
+
+<body>
+
+
+
+<!-- ================== ENTRADAS ================== -->
+<section id="entradas" class="seccion">
+<h2>ENTRADAS</h2>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BLANCO DE ORILLA</h3>
+    <span class="precio">40K</span>
+  </div>
+  <p class="subtitulo">Ceviche de róbalo y leche de coco</p>
+  <p class="descripcion">
+    El frescor del Golfo en un róbalo fresco traído por pescadores locales,
+    curado en sal y limón, abrazado por leche de coco sedosa, cebolla morada
+    y ají costeño. Acompañado de una leche de tigre intensa que despierta
+    los sentidos como brisa de mar al amanecer.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BRISA DEL MANGLAR</h3>
+    <span class="precio">35K</span>
+  </div>
+  <p class="subtitulo">Gyosas x5</p>
+  <p class="descripcion">
+    Doradas y delicadas, rellenas de camarón y pesca blanca.
+    Coronadas con suero costeño de acidez suave, evocan el susurro
+    del viento entre manglares y el vaivén tranquilo de la marea.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>TRES GOLPES DEL CARIBE</h3>
+    <span class="precio">35K</span>
+  </div>
+  <p class="subtitulo">Tostones de guineo con pulpo acevichado</p>
+  <p class="descripcion">
+    La crocancia del tostón se encuentra con la frescura del pulpo marinado
+    y el perfume del ají dulce. Un plato que despierta memoria,
+    patio, pilón y conversación frente al mar.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>MESA DE PUEBLO</h3>
+    <span class="precio">30K</span>
+  </div>
+  <p class="subtitulo">Antojitos colombianos</p>
+  <p class="descripcion">
+    Carimañolas, papas rellenas y aborrajados que saben a reunión familiar.
+    Servidos con ají de lulo y suero artesanal, como en mesas largas
+    donde siempre hay manos que comparten.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>TIERRA FIRME</h3>
+    <span class="precio">45K</span>
+  </div>
+  <p class="subtitulo">Tartar de res</p>
+  <p class="descripcion">
+    Carne cortada a cuchillo, aderezada con mostaza de la casa
+    y coronada con crocancia costeña. Un homenaje a los campos
+    ganaderos que conviven con el mar cercano.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BRISA DE PALENQUE</h3>
+    <span class="precio">38K</span>
+  </div>
+  <p class="subtitulo">Taquitos de camarón</p>
+  <p class="descripcion">
+    Tortillas doradas que envuelven camarones salteados al ajo
+    y limón criollo, coronados con repollo fresco, pico de gallo
+    costeño y salsa suave de cocina ancestral.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>REDES DEL GOLFO</h3>
+    <span class="precio">42K</span>
+  </div>
+  <p class="subtitulo">Cóctel de camarón</p>
+  <p class="descripcion">
+    Camarones rosados bañados en salsa fresca de tomate, limón
+    y cilantro. Frío, vibrante y honesto, con carácter salino
+    del Golfo de Morrosquillo.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BLANCO DE SAFARI</h3>
+    <span class="precio">40K</span>
+  </div>
+  <p class="subtitulo">Ceviche mixto</p>
+  <p class="descripcion">
+    Pesca blanca y camarón curados en sal y limón,
+    con cebolla morada y ají costeño. Servido con leche
+    de tigre intensa que despierta apetito y memoria.
+  </p>
+</div>
+
+</section>
+
+<!-- ================== CREMAS Y CAZUELAS ================== -->
+<section id="cremas" class="seccion">
+<h2>CREMAS Y CAZUELAS</h2>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BRISA DORADA DE COVEÑAS</h3>
+    <span class="precio">25K</span>
+  </div>
+  <p class="subtitulo">Crema de ahuyama con camarón</p>
+  <p class="descripcion">
+    Ahuyama asada lentamente hasta volverse seda,
+    abrazada por camarones salteados que evocan
+    la faena temprana del pescador.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>ROJO ATARDECER DEL MORROSQUILLO</h3>
+    <span class="precio">25K</span>
+  </div>
+  <p class="subtitulo">Crema de tomate</p>
+  <p class="descripcion">
+    Tomates maduros cocidos sin prisa,
+    concentrando sabor y memoria.
+    Sencilla, honesta y profunda como el atardecer.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>FOGÓN DEL GOLFO</h3>
+    <span class="precio">90K</span>
+  </div>
+  <p class="subtitulo">Cazuela de mariscos con langosta</p>
+  <p class="descripcion">
+    Camarones, calamares, pesca blanca y moluscos
+    cocidos lentamente en leche de coco y sofrito costero.
+    Un plato que reúne y reconforta.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BRUMA DE LANGOSTA Y CAMARÓN</h3>
+    <span class="precio">70K</span>
+  </div>
+  <p class="subtitulo">Cazuela de camarón y langostino</p>
+  <p class="descripcion">
+    Camarones y langostinos en leche de coco sedosa,
+    hierbas frescas y sofrito criollo.
+    Profunda, envolvente y elegante.
+  </p>
+</div>
+
+</section>
+<!-- ================== ARROCES ================== -->
+<section id="arroces" class="seccion">
+<h2>ARROCES</h2>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>OLA Y SABANA</h3>
+    <span class="precio">65K</span>
+  </div>
+  <p class="subtitulo">Arroz caldoso de mar y tierra</p>
+  <p class="descripcion">
+    Mariscos frescos y cortes selectos cocidos en caldo profundo,
+    donde se encuentran el aroma del campo y la brisa marina.
+    Cremoso, abundante y lleno de carácter.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>CANTO DORADO</h3>
+    <span class="precio">60K</span>
+  </div>
+  <p class="subtitulo">Arroz meloso de camarón</p>
+  <p class="descripcion">
+    Camarones salteados en sofrito criollo y arroz cocido lentamente
+    hasta lograr textura sedosa. Cada cucharada es mar concentrado.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>SUDOR DEL PUERTO</h3>
+    <span class="precio">55K</span>
+  </div>
+  <p class="subtitulo">Arroz con pollo costeño</p>
+  <p class="descripcion">
+    Pollo jugoso, verduras frescas y especias suaves,
+    cocidos en caldo aromático como los almuerzos
+    que esperan después de una jornada de mar.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>MAR Y BRAZA</h3>
+    <span class="precio">160K</span>
+  </div>
+  <p class="subtitulo">Arroz especial de la casa (para compartir)</p>
+  <p class="descripcion">
+    Langosta, camarón, pulpo y pesca blanca en arroz cremoso
+    terminado a la brasa. Un plato generoso pensado para celebrar.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>RUTA DEL DRAGÓN COSTEÑO</h3>
+    <span class="precio">52K</span>
+  </div>
+  <p class="subtitulo">Arroz oriental caribeño</p>
+  <p class="descripcion">
+    Inspirado en la mezcla cultural del puerto:
+    vegetales salteados, proteína jugosa y arroz al wok
+    con acento costeño.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>NEGRO PROFUNDO</h3>
+    <span class="precio">65K</span>
+  </div>
+  <p class="subtitulo">Arroz negro con mariscos</p>
+  <p class="descripcion">
+    Tinta de calamar que oscurece el arroz
+    y realza sabores intensos del océano.
+    Misterioso, elegante y profundamente marino.
+  </p>
+</div>
+
+</section>
+
+<!-- ================== SALMÓN ================== -->
+<section id="salmon" class="seccion">
+<h2>SALMÓN</h2>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>SALMÓN COSTA SERENA</h3>
+    <span class="precio">70K</span>
+  </div>
+  <p class="subtitulo">Salmón sellado en mantequilla</p>
+  <p class="descripcion">
+    Filete jugoso con piel crujiente,
+    acompañado de vegetales frescos y salsa ligera
+    que equilibra suavidad y frescura.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>SALMÓN EN COSTRA DE FRUTOS SECOS</h3>
+    <span class="precio">70K</span>
+  </div>
+  <p class="subtitulo">Costra crocante y corazón suave</p>
+  <p class="descripcion">
+    Cubierto con mezcla tostada de frutos secos,
+    sellado al punto exacto. Crujiente por fuera,
+    mantequilloso por dentro.
+  </p>
+</div>
+
+</section>
+
+<!-- ================== PASTAS ================== -->
+<section id="pastas" class="seccion">
+<h2>PASTAS</h2>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>CAMINO DEL MONZÓN</h3>
+    <span class="precio">62K</span>
+  </div>
+  <p class="subtitulo">Pasta en salsa cremosa de mariscos</p>
+  <p class="descripcion">
+    Camarones y moluscos en crema suave,
+    con perfume de vino blanco y hierbas frescas.
+    Rica, envolvente y elegante.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>PERLA DEL OCÉANO</h3>
+    <span class="precio">60K</span>
+  </div>
+  <p class="subtitulo">Pasta con camarón</p>
+  <p class="descripcion">
+    Pasta al dente abrazada por salsa ligera de coco
+    y camarones salteados. Sutil, fresca y aromática.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>AZUL DE LA SABANA</h3>
+    <span class="precio">58K</span>
+  </div>
+  <p class="subtitulo">Pasta con pollo</p>
+  <p class="descripcion">
+    Pollo jugoso en salsa cremosa especiada,
+    evocando la tranquilidad del campo cercano al mar.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>BLANCURA DE MAREA</h3>
+    <span class="precio">65K</span>
+  </div>
+  <p class="subtitulo">Pasta blanca con mariscos</p>
+  <p class="descripcion">
+    Mezcla delicada de frutos del mar
+    en salsa blanca suave y aromática.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>MONTE Y VIÑEDO</h3>
+    <span class="precio">55K</span>
+  </div>
+  <p class="subtitulo">Pasta en salsa de vino tinto</p>
+  <p class="descripcion">
+    Reducción de vino y carne tierna,
+    profunda y reconfortante como sobremesa larga.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>FETTUCCINE DEL PUERTO VIEJO</h3>
+    <span class="precio">60K</span>
+  </div>
+  <p class="subtitulo">Fettuccine en salsa especial de la casa</p>
+  <p class="descripcion">
+    Pasta fresca bañada en salsa cremosa,
+    con toque secreto del fogón.
+  </p>
+</div>
+
+</section>
+
+<!-- ================== PESCADOS Y MARISCOS ================== -->
+<section id="pescados" class="seccion">
+<h2>PESCADOS Y MARISCOS</h2>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>MAR CRIOLLO</h3>
+    <span class="precio">60K</span>
+  </div>
+  <p class="subtitulo">Róbalo relleno con sofrito costero</p>
+  <p class="descripcion">
+    Delicioso róbalo relleno de un sofrito costero acompañado con arroz meloso de coco,
+    patacones y ensalada fresca. Fusión de dos mundos: el mar que alimenta y la tradición
+    sabanera que honra el fogón. Sellado con carácter y servido con equilibrio profundo.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>CRUJIR DEL MAR</h3>
+    <span class="precio">45K</span>
+  </div>
+  <p class="subtitulo">Langostinos rebosados</p>
+  <p class="descripcion">
+    Langostinos jugosos cubiertos en tempura ligera. Crujen al morder,
+    como madera seca en el fogón, acompañados de salsa cítrica que limpia
+    el paladar y pide otro bocado.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>LOMO ESCARLATA</h3>
+    <span class="precio">65K</span>
+  </div>
+  <p class="subtitulo">Atún encostrado de ajonjolí con risotto de chontaduro</p>
+  <p class="descripcion">
+    Filete de atún sellado con costra de ajonjolí y especias,
+    acompañado de un risotto cremoso de chontaduro.
+    Inspirado en las jornadas de pesca en Tolú,
+    donde el atún cae rojo como un sol al amanecer.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>PARGO ROJO A LA BRASA</h3>
+    <span class="precio">75K</span>
+  </div>
+  <p class="subtitulo">Pargo rojo con arroz meloso de coco</p>
+  <p class="descripcion">
+    Delicioso pargo rojo acompañado de arroz meloso de coco,
+    patacón y ensalada fresca. Dorado, crujiente y fragante,
+    como esas fritangas de río preparadas en fogones abiertos.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>RÓBALO A LA BRASA</h3>
+    <span class="precio">65K</span>
+  </div>
+  <p class="subtitulo">Róbalo fresco tradicional</p>
+  <p class="descripcion">
+    Delicioso róbalo acompañado de arroz meloso de coco,
+    patacón y ensalada fresca. Frito al punto exacto donde
+    la piel canta y la carne se vuelve mantequilla.
+    Sabor de puerto antiguo y memorias frente al mar.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>FOGÓN DE MAREA</h3>
+    <span class="precio">85K</span>
+  </div>
+  <p class="subtitulo">Langosta a la marinera</p>
+  <p class="descripcion">
+    Langosta cocinada lentamente en salsa de tomate criollo,
+    vino y hierbas frescas. Untuosa, profunda y ceremonial,
+    como los grandes platos que se sirven para celebrar.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>CABRITO DE MAR</h3>
+    <span class="precio">100K</span>
+  </div>
+  <p class="subtitulo">Pargo en salsa marinera especiada</p>
+  <p class="descripcion">
+    Pargo rojo bañado en reducción especiada estilo cabrito,
+    una fusión audaz entre mar y sabana.
+    Potente, aromático y profundamente regional.
+  </p>
+</div>
+
+<div class="plato">
+  <div class="plato-header">
+    <h3>MAREA Y BRASA</h3>
+    <span class="precio">75K</span>
+  </div>
+  <p class="subtitulo">Risotto de queso con pulpo a la brasa</p>
+  <p class="descripcion">
+    Pulpo tierno marcado a la brasa servido sobre risotto
+    de quesos cremosos y envolventes. Una salsa suave
+    de acento marino une el conjunto como la marea
+    besando la orilla.
+  </p>
+</div>
+
+</section>
+<!-- ================== RES Y COSTILLA ================== -->
+<section id="res" class="seccion">
+<h2>RES Y COSTILLA</h2>
+
+<div class="plato"><div class="plato-header"><h3>AHUMADO DEL PUERTO</h3><span class="precio">60K</span></div>
+<p class="descripcion">Corte jugoso con notas ahumadas y salsa profunda de la casa.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>ROMERO DEL FOGÓN VIEJO</h3><span class="precio">65K</span></div>
+<p class="descripcion">Carne sellada con romero fresco y mantequilla especiada.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>RAÍZ DEL CAFÉ</h3><span class="precio">65K</span></div>
+<p class="descripcion">Corte bañado en reducción de café y especias suaves.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>EL PATRÓN RIB EYE NACIONAL</h3><span class="precio">80K</span></div>
+<p class="descripcion">Rib eye nacional con marmoleo equilibrado y sabor profundo.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>EL PATRÓN RIB EYE ANGUS</h3><span class="precio">160K</span></div>
+<p class="descripcion">Angus seleccionado, potente y perfectamente sellado.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>SEÑORÍO</h3><span class="precio">70K</span></div>
+<p class="descripcion">Corte fino de textura suave y sabor elegante.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>NEW YORK NACIONAL</h3><span class="precio">80K</span></div>
+<p class="descripcion">Clásico corte firme, jugoso y lleno de carácter.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>NEW YORK ANGUS</h3><span class="precio">160K</span></div>
+<p class="descripcion">Angus premium con punto exacto y sabor intenso.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>CORAZÓN DE SABANA</h3><span class="precio">65K</span></div>
+<p class="descripcion">Carne tierna que honra la tradición ganadera regional.</p></div>
+
+</section>
+
+<!-- ================== ENSALADAS ================== -->
+<section id="ensaladas" class="seccion">
+<h2>ENSALADAS</h2>
+
+<div class="plato"><div class="plato-header"><h3>MAREA VERDE DEL MORROSQUILLO</h3><span class="precio">48K</span></div>
+<p class="descripcion">Hojas frescas, frutos del mar y vinagreta cítrica.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>CLÁSICA DE LA CASA</h3><span class="precio">35K</span></div>
+<p class="descripcion">Lechugas frescas, tomate, cebolla y aderezo artesanal.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>REDES DE ORILLA</h3><span class="precio">40K</span></div>
+<p class="descripcion">Ensalada fresca con camarones y toque de limón criollo.</p></div>
+
+</section>
+
+<!-- ================== RAPIDITOS ================== -->
+<section id="rapiditos" class="seccion">
+<h2>RAPIDITOS</h2>
+
+<div class="plato"><div class="plato-header"><h3>ROAST LEGEND</h3><span class="precio">35K</span></div>
+<p class="descripcion">Sándwich de roast beef con salsa especial y pan tostado.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>ITALIANÍSIMO SUPREMO</h3><span class="precio">35K</span></div>
+<p class="descripcion">Pan artesanal con embutidos italianos y queso fundido.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>ANGUS DEL PUERTO</h3><span class="precio">40K</span></div>
+<p class="descripcion">Hamburguesa angus jugosa con vegetales frescos.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>COROZO AHUMADO</h3><span class="precio">42K</span></div>
+<p class="descripcion">Sándwich con notas ahumadas y salsa dulce de corozo.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>CUATRO VIENTOS</h3><span class="precio">40K</span></div>
+<p class="descripcion">Hamburguesa especial con mezcla de quesos y salsa de la casa.</p></div>
+
+</section>
+
+<!-- ================== POSTRES ================== -->
+<section id="postres" class="seccion">
+<h2>POSTRES</h2>
+
+<div class="plato"><div class="plato-header"><h3>DULCE DE BARÚ</h3><span class="precio">20K</span></div>
+<p class="descripcion">Postre tropical suave y refrescante con frutas del Caribe.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>PERLAS DEL SINÚ ROJO</h3><span class="precio">20K</span></div>
+<p class="descripcion">Delicado postre con notas frutales y textura sedosa.</p></div>
+
+</section>
+
+<!-- ================== MENÚ INFANTIL ================== -->
+<section id="infantil" class="seccion">
+<h2>MENÚ INFANTIL</h2>
+
+<div class="plato"><div class="plato-header"><h3>CAPITÁN PEQUEÑO DE COVEÑAS</h3><span class="precio">25K</span></div>
+<p class="descripcion">Pechuga rellena dorada, suave por dentro y crujiente por fuera, con risotto cremoso.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>CHICKEN TENDERS</h3><span class="precio">25K</span></div>
+<p class="descripcion">Trocitos de pechuga jugosa empanizados y fritos al punto exacto.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>MINI HAMBURGUESA</h3><span class="precio">25K</span></div>
+<p class="descripcion">Carne jugosa, queso fundido y pan suave en tamaño perfecto.</p></div>
+
+<div class="plato"><div class="plato-header"><h3>PEQUEÑO FOGÓN</h3><span class="precio">25K</span></div>
+<p class="descripcion">Mini hamburguesa de pollo crispy, crujiente por fuera y suave por dentro.</p></div>
+
+</section>
+
+</body>
+</html>
+
